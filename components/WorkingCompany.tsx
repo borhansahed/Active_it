@@ -10,12 +10,12 @@ const WorkingCompany = () => {
     return (
         <>
         <div className=" flex justify-center items-center gap-x-28 lg:mt-32 x">
-            <SiNetflix className="text-6xl hover:animate-spin"/>
-            <SiAmazon className="text-6xl hover:animate-spin"/>
-            <SiSlack className="text-6xl hover:animate-spin"/>
-            <SiAirbnb className="text-6xl hover:animate-spin"/>
-            <SiGoogle className="text-6xl hover:animate-spin"/>
-            <FaUber className="text-6xl hover:animate-spin"/>
+            <SiNetflix className="text-6xl hover:animate-spin hover:opacity-50"/>
+            <SiAmazon className="text-6xl hover:animate-spin hover:opacity-50"/>
+            <SiSlack className="text-6xl hover:animate-spin hover:opacity-50"/>
+            <SiAirbnb className="text-6xl hover:animate-spin hover:opacity-50"/>
+            <SiGoogle className="text-6xl hover:animate-spin hover:opacity-50"/>
+            <FaUber className="text-6xl hover:animate-spin hover:opacity-50"/>
           
         </div>
         </>
