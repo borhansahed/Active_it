@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className="flex flex-col lg:flex-row justify-between items-center  m-8 h-auto relative">
 
-            <div className="flex  justify-evenly max-w-2xl  lg:mb-0">
+            <div className="flex  justify-evenly max-w-2xl  lg:mb-0 mb-2">
 
       <Navbar title={'Home'} icons={<AiOutlineHome/>}/>
        <Navbar title={'Dashboard'} icons={<RiDashboardLine/>}/>
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
             
             <div className="mr-0 lg:mr-8">
-                <h1 className="lg:text-5xl text-3xl text-white font-black mb-0  ">
+                <h1 style={{color: '#79b158'}} className="lg:text-5xl text-4xl  font-black mb-0  ">
                 Active <span className="text-gray-300 text-2xl lg:text-4xl">-IT</span> </h1>
         {/* <h3  className="lg:text-2xl text-base  font-black mt-0 lg:ml-12 ml-8 ">Agency</h3> */}
             </div>
