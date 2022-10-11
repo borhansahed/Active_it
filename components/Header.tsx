@@ -6,23 +6,24 @@ import {IoIosContract} from '@react-icons/all-files/io/IoIosContract'
 import {RiTeamLine} from "@react-icons/all-files/ri/RiTeamLine";
 import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
 import {FcAbout} from "@react-icons/all-files/fc/FcAbout";
+import Link from "next/link";
 
 
 
 const Header = () => {
 
-    const user = true;
+    const user = false;
     return (
         <header className="flex flex-col lg:flex-row justify-between items-center  m-8 h-auto relative">
 
             <div className="flex  justify-evenly max-w-2xl  lg:mb-0 mb-2">
 
-      <Navbar title={'Home'} icons={<AiOutlineHome/>}/>
-       <Navbar title={'Dashboard'} icons={<RiDashboardLine/>}/>
-       <Navbar title={'OurTeam'} icons={<RiTeamLine/>}/>
-       <Navbar title={'Contract'} icons={<IoIosContract/>}/>
+      <Navbar  url={''} title={'Home'} icons={<AiOutlineHome/>}/>
+       <Navbar url={'dashboard'} title={'Dashboard'} icons={<RiDashboardLine/>}/>
+       <Navbar url={'ourTeam'}title={'OurTeam'} icons={<RiTeamLine/>}/>
+       <Navbar url={'contract'}title={'Contract'} icons={<IoIosContract/>}/>
        {
-        user ?    <Navbar title={'Account'} icons={<VscAccount/>}/>: <Navbar title={'Login'} icons={<FiLogIn/>}/>
+        user ?    <Navbar url={'account'}title={'Account'} icons={<VscAccount/>}/>: <Navbar url={'signup'} title={'Login'} icons={<FiLogIn/>}/>
        }
       
             </div>

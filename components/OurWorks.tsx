@@ -13,10 +13,10 @@ const OurWorks = () => {
     return (
        <>
 
-       <div style={{backgroundColor: '#6d9853'}} className='  py-24 mt-36'>
+       <div style={{backgroundColor: '#6d9853'}} className='  py-28 mt-36'>
 
         <h1 className='text-center text-4xl text-white font-medium'>Here are some of our <span className='font-bold'>Works</span> </h1>
-       <div className=" mt-28 w-3/4 mx-auto">
+       <div className=" mt-16 w-3/4 mx-auto">
       
       <Swiper
        slidesPerView ={3}

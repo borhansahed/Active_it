@@ -1,7 +1,9 @@
 import logo from '../assets/images/logos/Frame.png'
 import Image from 'next/image';
-import { Button } from '@mui/material';
+import style from '../styles/Home.module.css'
+
 import WorkingCompany from './WorkingCompany';
+import Link from 'next/link';
 const HomeBanner = () => {
     return (
        <>
@@ -15,7 +17,10 @@ const HomeBanner = () => {
             <p className='lg:mt-10 mt-5 lg:text-xl text-white lg:w-96 w-80 lg:mx-0 mx-auto'>
             Your Satisfaction is our Goal. We believe in Quality and never compromise on it. So, Our Relation will Grow together. Be Connected And Growing Together.
             </p>
-            <Button variant="outlined" color={'inherit'} className='lg:mt-10 mt-5 lg:px-9 '>Hire Us</Button>
+            <Link href={'/dashboard'}>
+            <button  className={style.homeButton}>HIRE US</button>
+            </Link>
+            
         </div>
         <div>
      <Image className='' src={logo} width='
