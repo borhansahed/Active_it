@@ -5,9 +5,13 @@ import { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
 
 
 const login = () => {
+       
+    const handleSubmit = () =>{
+
+    }
     return (
         <div className="flex justify-center items-center">
-            <div className="mt-40">
+            <div className="mt-32">
                 <div className="ml-48">
                 <h1 style={{ color: '#79b158' }} className="lg:text-5xl text-4xl  font-black mb-0  ">
                     Active <span className="text-gray-300 text-2xl lg:text-4xl">-IT</span> </h1>
@@ -18,12 +22,13 @@ const login = () => {
                 <div className={style.container}>
                    <h1 className="text-3xl font-bold lg:ml-28 mt-6 text-gray-300">Login</h1>  
                    <div className="flex flex-col gap-y-6 mt-10">
+                    
         <input  className="p-2 w-80 text-black outline-gray-200 rounded-md" type="email" placeholder="Your email address" name="email" id="" required />
         <input className="p-2 w-80 text-black outline-gray-200 rounded-md" type="text" placeholder="Password" name="name" id="" required />
         
         {/* <input style={{ 
   height: '150px'}}  type="textarea" placeholder="Your message" required  /> */}
-        <input className={style.loginButton} type="button" value="Submit" />
+        <input onClick={handleSubmit} className={style.loginButton} type="button" value="Submit" />
         </div>
 
         <div className="flex justify-center items-center mt-8  gap-x-3">
@@ -48,7 +53,7 @@ const login = () => {
                     <h1 className="text-gray-300 hover:text-white">
                         Don`t have an account?
                     </h1>
-                    <Link href='/signup/register'><h1  style={{ color: '#79b158' }} className=" ml-2 ">Create an account</h1></Link>
+                    <Link href='/signup/register'><h1  style={{ color: '#79b158' }} className=" ml-2 underline">Create an account</h1></Link>
                    </div>
                 </div>
                
