@@ -41,9 +41,11 @@ const data = [
   ];
 const AdminChart = () => {
     return (
+     
         <div className='mt-8'>
             <h1 className='text-xl ml-2'>Last 7 months (Revenue)</h1>
-           <AreaChart className='mt-3 ml-20'  width={1300} height={450} data={data}
+           
+           <AreaChart className='mt-4 ml-12'  width={800} height={450} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -59,10 +61,12 @@ const AdminChart = () => {
   
   <CartesianGrid strokeDasharray="3 3" />
   <Tooltip />
-  <Area type="monotone" dataKey="order" stroke="gray" fillOpacity={1} fill="gray" />
+ 
   <Area type="monotone" dataKey="Total" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
 </AreaChart>
+
         </div>
+         
     );
 };
 

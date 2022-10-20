@@ -1,5 +1,6 @@
 import AdminChart from "./AdminChart";
 import AdminDashboardCard from "./AdminDashboardCard";
+import LastOrder from "./LastOrder";
 
 
 
@@ -12,9 +13,12 @@ const AdminDashboard = () => {
                     <AdminDashboardCard />
 
                 </div>
-                <div className="mt-5">
+                <div className=" flex  mt-5 hover:shadow-2xl">
                     <AdminChart/>
+                    <LastOrder/>
                 </div>
+             
+                
             </div>
 
         </>

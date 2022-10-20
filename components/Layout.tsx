@@ -10,8 +10,8 @@ const Layout: React.FC<any> = ({children}) => {
                 <h1 style={{ color: '#79b158' }} className="lg:text-5xl text-4xl  font-black mb-0  ">
                     Active <span className="text-gray-300 text-2xl lg:text-4xl">-IT</span> </h1>
             </div> */}
-         <div className="mt-8 flex">
-        <div className= 'border border-gray-300   rounded-xl mt-10 h-screen' >
+         <div className="mt-8 flex ">
+        <div className= 'border border-gray-300   rounded-xl mt-10 h-screen shadow-2xl' >
             
               <Sidebar/>  
             

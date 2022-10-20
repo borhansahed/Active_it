@@ -9,6 +9,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  
 
   res.send({name: "hello"})
 }

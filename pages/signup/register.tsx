@@ -6,11 +6,12 @@ const register = () => {
     return (
         <div className="flex justify-center items-center">
         <div className="mt-32">
+            <Link href={'/'}>
             <div className="ml-52">
             <h1 style={{ color: '#79b158' }} className="lg:text-5xl text-4xl  font-black mb-0  ">
                 Active <span className="text-gray-300 text-2xl lg:text-4xl">-IT</span> </h1>
         </div>
-
+          </Link>
         <div className={style.register}>
 
             <div className={style.container}>
