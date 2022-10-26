@@ -8,7 +8,7 @@ const connectDB = (handler:any)=> async(
   res: NextApiResponse
    ) => {
 
-   await mongoose.connect('mongodb+srv://activeIt:activeIt1100@activeit.naadcfr.mongodb.net/test');
+   await mongoose.connect(process.env.MONGO_URL);
 
    return handler(req,res);
 }

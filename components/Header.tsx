@@ -6,11 +6,13 @@ import {IoIosContract} from '@react-icons/all-files/io/IoIosContract'
 import {RiTeamLine} from "@react-icons/all-files/ri/RiTeamLine";
 import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
 import {FcAbout} from "@react-icons/all-files/fc/FcAbout";
-import Link from "next/link";
+import {useSession} from 'next-auth/react'
 
 
 
 const Header = () => {
+
+    const {data: session} = useSession();
 
     const user = false;
     return (
@@ -19,11 +21,14 @@ const Header = () => {
             <div className="flex  justify-evenly max-w-2xl  lg:mb-0 mb-2">
 
       <Navbar  url={''} title={'Home'} icons={<AiOutlineHome/>}/>
-       <Navbar url={'dashboard'} title={'Dashboard'} icons={<RiDashboardLine/>}/>
+      {
+          session &&  <Navbar url={'dashboard'} title={'Dashboard'} icons={<RiDashboardLine/>}/>
+      }
+      
        <Navbar url={'ourTeam'}title={'OurTeam'} icons={<RiTeamLine/>}/>
        <Navbar url={'contract'}title={'Contract'} icons={<IoIosContract/>}/>
        {
-        user ?    <Navbar url={'account'}title={'Account'} icons={<VscAccount/>}/>: <Navbar url={'signup'} title={'Login'} icons={<FiLogIn/>}/>
+        session ?    <Navbar url={'account'}title={'Account'} icons={<VscAccount/>}/>: <Navbar url={'signup'} title={'Login'} icons={<FiLogIn/>}/>
        }
       
             </div>

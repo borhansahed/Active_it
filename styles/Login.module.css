@@ -52,3 +52,11 @@
 .register:hover{
     color: white;
 }
+#Number{
+    -webkit-appearance: none;
+  margin: 0;
+ 
+}
+
+
+/* Firefox */

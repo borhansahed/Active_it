@@ -2,7 +2,7 @@
 import AdminDashboard from "../../components/AdminDashboard/AdminDashboard";
 import Layout from "../../components/Layout";
 import UserDashboard from "../../components/UserDashboard";
-
+import { getSession } from "next-auth/react";
 
 const index = () => {
 
@@ -28,3 +28,22 @@ const index = () => {
 };
 
 export default index;
+
+export async function getServerSideProps (context:any){
+    const session = await getSession(context.req);
+    console.log(session);
+     
+    // if(!session){
+    //     return{
+    //         redirect:{
+    //             destination:"/signup",
+    //             permanent: false
+    //         }
+    //     }
+    // }
+
+    return{
+        props:{ session }
+    
+    }
+}

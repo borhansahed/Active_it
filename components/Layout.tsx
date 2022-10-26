@@ -1,5 +1,6 @@
 import Sidebar from "./Sidebar";
-import style from '../styles/siderbar.module.css'
+
+
 
 
 const Layout: React.FC<any> = ({children}) => {

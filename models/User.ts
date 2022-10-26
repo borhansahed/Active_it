@@ -2,24 +2,24 @@ const mongoose = require("mongoose");
 
 
 const UserSchema = new mongoose.Schema({
-    Name: {
+    name: {
         type: String,
         required: true
     },
-    UserEmail:{
+    email:{
          type:String,
          required:true
     },
     password: {
-        type: Number,
+        type: String,
         required: true
     },
-    mobileNumber: {
+   number: {
         type: Number,
         required: true
     },
    
     
 })
-
+mongoose.models = {};
 export default mongoose.model("User", UserSchema);

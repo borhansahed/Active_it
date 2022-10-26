@@ -1,5 +1,4 @@
 import { SiNetflix } from "@react-icons/all-files/si/SiNetFlix";
-
 import { SiSlack } from "@react-icons/all-files/si/SiSlack";
 import { SiAirbnb } from "@react-icons/all-files/si/SiAirbnb";
 import { SiGoogle } from "@react-icons/all-files/si/SiGoogle";
