@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import style from '../../styles/Login.module.css'
-import { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
+import { FcGoogle } from "react-icons/fc";
 import { signIn } from 'next-auth/react'
 import toast from 'react-hot-toast';
 import { useState } from "react";

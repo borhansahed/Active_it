@@ -1,11 +1,11 @@
 
 import Link from "next/link";
 
-import { MdDashboard } from "@react-icons/all-files/md/MdDashboard";
-import { FaServicestack } from "@react-icons/all-files/fa/FaServicestack";
-import { RiAdminFill } from "@react-icons/all-files/ri/RiAdminFill";
-import { GoListOrdered } from "@react-icons/all-files/go/GoListOrdered";
-import { RiArrowRightCircleFill } from "@react-icons/all-files/ri/RiArrowRightCircleFill";
+import { MdDashboard }    from "react-icons/md";
+import { FaServicestack }         from "react-icons/fa";
+import { RiAdminFill }            from "react-icons/ri";
+import { GoListOrdered }          from "react-icons/go";
+import { RiArrowRightCircleFill } from "react-icons/ri";
 import { useSession, signOut } from 'next-auth/react'
 import { useRouter } from 'next/router';
 
@@ -47,18 +47,18 @@ const Sidebar = () => {
 
     const router = useRouter();
 
-  
-const handleSignOut = () => {
- 
-    signOut();
-    setTimeout(()=>{
-          router.push('http:localhost:3000')
-    },1000)
-  
 
-     
+    const handleSignOut = () => {
 
-}
+        signOut();
+        setTimeout(() => {
+            router.push('http:localhost:3000')
+        }, 1000)
+
+
+
+
+    }
 
     const { data: session } = useSession();
 

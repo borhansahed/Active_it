@@ -1,11 +1,11 @@
 import Navbar from "./Navbar";
-import { AiOutlineHome} from "@react-icons/all-files/ai/AiOutlineHome";
-import {RiDashboardLine} from "@react-icons/all-files/ri/RiDashboardLine";
-import {FiLogIn} from '@react-icons/all-files/fi/FiLogIn'
-import {IoIosContract} from '@react-icons/all-files/io/IoIosContract'
-import {RiTeamLine} from "@react-icons/all-files/ri/RiTeamLine";
-import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
-import {FcAbout} from "@react-icons/all-files/fc/FcAbout";
+import { AiOutlineHome} from "react-icons/ai";
+import {RiDashboardLine} from "react-icons/ri/";
+import {FiLogIn} from 'react-icons/fi'
+import {IoIosContract} from 'react-icons/io'
+import {RiTeamLine} from "react-icons/ri";
+import {VscAccount} from "react-icons/vsc";
+import {FcAbout} from "react-icons/fc";
 import {useSession} from 'next-auth/react'
 
 

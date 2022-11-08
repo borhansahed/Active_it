@@ -1,7 +1,7 @@
 import { Card, Grid, Text } from "@nextui-org/react";
 
-import { HiDocumentReport } from "@react-icons/all-files/hi/HiDocumentReport";
-import { FaShoppingCart } from "@react-icons/all-files/fa/FaShoppingCart";
+import { HiDocumentReport } from "react-icons/hi";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const AdminDashboardCard = () => {
